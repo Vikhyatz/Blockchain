@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #0d0d2b;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 3rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .hero-content {
+      text-align: center;
+      margin: auto;
+    }
+
+    .hero-content h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      margin-top: 1rem;
+      color: #fff;
+      background: #1b8aff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #0066cc;
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .planet-cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .planet-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .contact-section form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-section button {
+      padding: 0.7rem;
+      background: #1b8aff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    .footer {
+      background: #000;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero-section">
+    <div class="overlay">
+      <nav class="navbar">
+        <div class="logo">🚀 Space Explorer</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#planets">Planets</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h1>Discover the Universe</h1>
+        <p>Embark on a cosmic adventure through the stars, planets, and beyond.</p>
+        <a href="#planets" class="btn">Explore Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Space Exploration</h2>
+      <p>
+        Space exploration has captivated humanity for centuries. Discover the wonders of the cosmos, learn about
+        missions to other planets, and understand the importance of exploring the final frontier.
+      </p>
+    </section>
+
+    <!-- Planets Section -->
+    <section id="planets" class="planets-section">
+      <h2>Planets in Our Solar System</h2>
+      <div class="planet-cards">
+        <div class="planet-card">
+          <img src="https://via.placeholder.com/150" alt="Mercury">
+          <h3>Mercury</h3>
+          <p>The smallest planet in our solar system and closest to the Sun.</p>
+        </div>
+        <div class="planet-card">
+          <img src="https://via.placeholder.com/150" alt="Mars">
+          <h3>Mars</h3>
+          <p>The Red Planet, known for its dusty landscape and potential for life.</p>
+        </div>
+        <div class="planet-card">
+          <img src="https://via.placeholder.com/150" alt="Jupiter">
+          <h3>Jupiter</h3>
+          <p>The gas giant with a massive storm system known as the Great Red Spot.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/200" alt="Galaxy">
+        <img src="https://via.placeholder.com/200" alt="Nebula">
+        <img src="https://via.placeholder.com/200" alt="Astronaut">
+        <img src="https://via.placeholder.com/200" alt="Rocket Launch">
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Space Explorer. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
